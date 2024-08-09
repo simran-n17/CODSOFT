@@ -1,1 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
 
+.upper{
+    /* background-color: rgb(0, 4, 43); */
+    background-image: url("images/blackImg.avif");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: sticky;
+    top: 0%;
+    z-index: -1;
+
+}
+/* Navbar */
+
+nav{
+    
+    border: 0px solid rgba(165, 165, 165, 0);
+    /* background-color: rgb(225, 225, 225); */
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 1px rgba(98, 98, 98, 0.505); */
+
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Nav items */
+.nav-items {
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+}
+
+@keyframes nameblink {
+    0% {
+        color: rgb(255, 242, 178);
+
+    }
+    10%{
+        color: rgb(255, 242, 178);
+    }
+    11% {
+        color: rgb(0, 8, 99);
+    }
+    12% {
+        color: rgb(255, 242, 178);
+
+    }
+    20% {
+        color: rgb(0, 8, 99);
+    }
+    21% {
+        color: rgb(255, 242, 178);
+    }
+    22% {
+        color: rgb(255, 242, 178);
+
+    }
+    90% {
+        color: rgb(255, 242, 178);
+
+    }
+    91% {
+        color: rgb(0, 8, 99);
+    }
+    92% {
+        color: rgb(255, 242, 178);
+
+    }
+    100% {
+        color: rgb(255, 242, 178);
+    }
+  }
+nav h3{
+    margin : 2px 2px 2px 2px;
+    margin-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:xx-large;
+    color:rgb(0, 0, 95);
+    text-shadow: 1px 1px 1px rgb(125, 125, 125);
+    animation-name: nameblink;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: infinite;
+}
+
+  
+
+/* About Section  */
+
+.about{
+    border: 0px solid rgba(255, 255, 255, 0);
+    /* background-color: rgba(255, 255, 255, 0.135);     */
+    display: flex;
+    gap:10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; 
+    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.about .image img {
+    /* box-shadow: 2px 5px 5px rg b(87, 87, 87); */
+    border-radius: 30%;
+    transition-duration: 0.5s;
+    max-width: 25rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 7%;
+    margin-left: 40%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.bio{
+    /* border: 0px solid white; */
+    /* background-color: white; */
+    border-radius: 48%;
+    margin: auto;
+    transition-duration: .5s;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.bio p{
+    color: rgb(254, 232, 231);
+    text-shadow: 1px 2px 2px rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    font-size:xx-large;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.bio p b{
+    font-style:normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(254, 232, 231);
+    font-size:7rem;
+    text-shadow: 1px 5px 5px rgb(255, 248, 211);
+}
+
+/* .bio:hover{
+    box-shadow: 2px 2px 2px 2px  rgb(82, 82, 82);
+    transition-duration: .5s;
+} */
+
+/* About Me */
+.abt-me{
+    background-color: rgb(215, 110, 107);
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+    
+}
+.inner-abt{
+    text-align: justify;
+    display: flex;
+    
+    
+}
+.abt-me h1{
+    color: rgb(0, 45, 68);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.txt-abt{
+    margin: auto;
+    margin-left: 3%;
+    width: 43rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px black;
+    word-spacing: 4px;
+    font-size: 1.4rem;
+    
+}
+.abt-img img{
+    width: 23rem;
+    margin: auto;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    
+}
+
+/* Skill Section */
+.skill{
+    background-color: rgb(0, 45, 68);
+    z-index: 100;
+    
+}
+.inside-skill{
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.skill h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    color: azure;
+}
+
+.skills{
+    border: 0px solid rgba(128, 128, 128, 0.416);
+    text-align: center;
+    /* background-color: white; */
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    height: 10rem;
+    width: 10rem;
+    font-size: larger;
+    transition-duration: .5s;
+    margin-bottom: 3rem;
+    color: azure;
+}
+.skills h3{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px  rgb(215, 110, 107);
+}
+.skills p{
+    margin-top: 2rem;
+    color:  rgb(250, 201, 199);
+    transition-duration: .5s;
+
+}
+
+.skills:hover{
+    background-color:rgba(129, 213, 255, 0.502);
+    /* box-shadow: 2px 2px 2px white; */
+    transition-duration:.5s;
+}
+.skills p:hover{
+    color: azure;
+}
+
+/* Experience */
+
+.exper{
+    text-align: center;  
+    background-color: rgb(215, 110, 107);
+    /* background-color: rgba(244, 173, 170, 0.584); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    z-index: 2;
+}
+
+.exper h1{
+    margin: auto;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: rgb(0, 45, 68);
+    /* text-shadow: 1px 1px 1px rgb(219, 255, 157); */
+
+}
+
+.common-exp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.exp-side h3{
+    color: rgba(0, 45, 68, 0.824);
+    font-size:x-large;
+}
+.common-exp span{
+    
+    color: rgb(0, 45, 68);
+    font-weight: bolder;
+
+}
+
+.common-exp img{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 15rem;
+    max-width: 15rem;   
+    transition-duration: 1s;    
+}
+
+.common-exp img:hover{
+    max-width: 20rem;
+    max-width: 20rem;   
+    box-shadow:  5px 5px 5px rgb(255, 255, 255);  
+    transition-duration: 1s;    
+}
+
+
+
+
+/* Project Section */
+.main-prj{
+    background-color: rgb(0, 45, 68);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+}
+.main-prj h1{
+    margin: auto;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.692);
+    /* text-shadow: 2px 2px 2px black; */
+    animation-name: outlineblink;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: infinite;
+}
+.project{
+      justify-content: center;  
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      color: aliceblue;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.prj-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    transition-duration: .5s;
+
+}
+
+.prj-div a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.prj-div a:hover{
+    color: beige;
+}
+.prj-div img:hover{
+    opacity:50%;
+    transition-duration: .5s;
+}
+.project .images img{
+    width: 25rem;
+    height: 20rem;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.ard-park{
+    justify-content: center;
+    display: flex;
+    gap: 10rem;
+}
+.ard img{
+    width: 20rem;
+    height: 30rem;
+}
+
+
+/* Programming Link */
+.cp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition-duration: .5s;
+    background-color: aliceblue;
+}
+.cp:hover{
+    background-color: rgb(227, 227, 227);
+    transition-duration: .5s;
+}
+.com-cp{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    justify-content:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.com-cp a{
+    margin: 1px 1px 1px 1px;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration:underline;
+    color:black;
+}
+.com-cp a:hover{
+    color:coral;
+}
+.com-cp p{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem;
+}
+/* Resume */
+.outer-res{    
+    background-color: aliceblue;
+}
+.resume{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:x-large;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+    text-align: center;
+
+}
+.resume a:hover{
+    color:cadetblue;
+}
+
+/* Contact Section */
+.contact{
+    background-color: rgb(0, 45, 68);
+    justify-content: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(190, 242, 225);
+}
+
+.inner-contact{
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.email-contact{
+    margin-left: 2%;
+    transition-duration: .5s;
+}
+.email-contact svg:hover{
+    color: rgb(208, 31, 31);
+}
+
+.work-contact{
+    margin-right: 5%;
+}
+.social-line{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;   
+    color: rgb(190, 242, 225);
+}
+
+.social-line a{
+    color: rgb(228, 255, 246);
+    transition-duration: .5s;
+}
+
+.linkedin a:hover{
+    color: blue;
+    transition-duration: .5s;
+}
+.twitter a:hover{
+    color: grey;
+    transition-duration: .5s;
+}
+.quora a:hover{
+    color: red;
+    transition-duration: .5s;
+}
+.medium a:hover{
+    background-color: white;
+    color: rgb(43, 43, 43);
+    border-radius: 50%;
+    transition-duration: .5s;
+}
+.hashnode a:hover{
+    color: rgb(2, 2, 86);
+    transition-duration: .5s;
+}
+.github a:hover{
+    color: rgb(30, 30, 52);
+    transition-duration: .5s;
+
+}
+
+/* Footer */
+footer{
+    background-color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+}
